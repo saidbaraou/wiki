@@ -1,6 +1,51 @@
 html,
-body {
+body,
+a {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+} */
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+  padding: 6px;
+  margin-right: 15px;
+}
+
+.links-box {
+  width: 25%;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.image_search {
+  padding: 0 0 0 15px;
+}
+
+.advanced_search {
+  padding: 0 15px 0 15px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
