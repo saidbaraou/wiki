@@ -1,15 +1,23 @@
 html,
-body,
-a {
+body {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .links {
@@ -27,11 +35,11 @@ a {
   /* justify-content: space-around; */
 }
 
-.image_search {
+.image-search {
   padding: 0 0 0 15px;
 }
 
-.advanced_search {
+.advanced-search {
   padding: 0 15px 0 15px;
 }
 
