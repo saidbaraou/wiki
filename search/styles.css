@@ -20,7 +20,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.links {
+nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -43,8 +43,9 @@ a:hover {
   padding: 0 15px 0 15px;
 }
 
-.form-container {
+main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
