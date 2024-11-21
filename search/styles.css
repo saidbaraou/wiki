@@ -120,4 +120,48 @@ span.images {
 
 .horizontal-line {
   border-bottom: 1px solid #ebebeb;
+  margin-top: 1.3rem;
+}
+
+.main-form {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1140px;
+  min-width: 200px;
+  width: 96%;
+  margin: 40px 2% 0 45px;
+}
+
+.advanced-label {
+  color: red;
+  margin: 0 0 0 3rem;
+  font-size: 1.3rem;
+}
+
+.form-label {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.advanced-form {
+  width: 100%;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+.form-rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+input[type='text'].advanced-search-bars {
+  min-width: 400px;
+  margin-bottom: 0;
 }

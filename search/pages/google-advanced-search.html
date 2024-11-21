@@ -12,16 +12,27 @@
       <a href="/index.html">Google Search</a>
     </div>
   </nav>
-  <label>Advanced Search</label>
+  <label class="advanced-label">Advanced Search</label>
   <div class="horizontal-line"></div>
-  <main class="main">
-    <img src="/assets/images/googlelogo_color_272x92dp.png" alt="">
-    <div class="form-container">
-      <form action="https://google.com/search" class="form">
-        <input type="text" name="q" class="search-bar">
-        <input type="submit" value="Google Search" class="search-button">
-      </form>
-    </div>
+  <main class="main-form">
+    <form action="/search" class="advanced-form">
+      <div class="form-label">
+        <span>Find pages with...</span>
+      </div>
+      <div class="form-fields">
+        <div class="form-rows">
+          <div>
+            <label>all these words</label>
+          </div>
+          <div>
+            <input type="text" name="q" class="advanced-search-bars">
+          </div>
+        </div>
+        <label>This exact word or phrase</label>
+        <input type="text" name="q" class="advanced-search-bars">
+
+      </div>
+    </form>
   </main>
 
 
