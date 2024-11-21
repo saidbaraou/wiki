@@ -156,7 +156,7 @@ span.images {
 }
 .form-rows {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 1rem 0;
 }
@@ -164,4 +164,7 @@ span.images {
 input[type='text'].advanced-search-bars {
   min-width: 400px;
   margin-bottom: 0;
+  border-radius: 0;
+}
+input[type='text'].advanced-search-bars:hover {
 }
