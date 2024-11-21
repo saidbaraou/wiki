@@ -48,7 +48,6 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  position: relative;
 }
 
 .form-container {
@@ -98,13 +97,15 @@ input[type='submit'] {
   color: #202124;
 }
 
+.logo {
+  position: relative;
+}
+
 span.images {
   color: #4285f4;
   font: 16px / 16px Arial, sans-serif;
   position: absolute;
-  /* bottom: 10px; */
-  top: 202px;
-  left: 589px;
-  /* bottom: 0; */
+  top: 74px;
+  right: 5px;
   white-space: nowrap;
 }
