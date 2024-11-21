@@ -48,6 +48,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 
 .form-container {
@@ -95,4 +96,15 @@ input[type='submit'] {
   background-color: #f8f9fa;
   border: 1px solid #dadce0;
   color: #202124;
+}
+
+span.images {
+  color: #4285f4;
+  font: 16px / 16px Arial, sans-serif;
+  position: absolute;
+  /* bottom: 10px; */
+  top: 202px;
+  left: 589px;
+  /* bottom: 0; */
+  white-space: nowrap;
 }
