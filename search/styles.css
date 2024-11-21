@@ -62,7 +62,7 @@ main {
   align-items: center;
 }
 
-input.search-bar {
+input[type='text'] {
   max-width: 584px;
   width: 100%;
   min-height: 44px;
@@ -76,7 +76,7 @@ input.search-bar {
   outline: none;
 }
 
-.search-button {
+input[type='submit'] {
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
   border-radius: 4px;
