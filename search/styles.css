@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -115,4 +116,8 @@ span.images {
   top: 74px;
   right: 5px;
   white-space: nowrap;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid #ebebeb;
 }
