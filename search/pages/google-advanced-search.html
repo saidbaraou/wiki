@@ -21,13 +21,21 @@
       </div>
       <div class="form-fields">
         <div class="form-row">
-          <div>
-            <label>all these words:</label>
+          <div class="label-wrapper">
+            <div class="row-label">
+              <label>all these words:</label>
+            </div>
           </div>
-          <div>
-            <input type="text" name="q" class="advanced-search-bars">
+          <div class="search-bar-wrapper">
+            <div class="row-search-bar">
+              <input type="text" name="q" class="advanced-search-bars">
+            </div>
+
           </div>
         </div>
+
+
+
         <div class="form-row">
           <div>
             <label>This exact word <br> or phrase:</label>
@@ -52,7 +60,10 @@
             <input type="text" name="q" class="advanced-search-bars">
           </div>
         </div>
-        <input type="submit" value="Advanced Search" class="advanced-search-button">
+        <div class="advanced-button-container">
+          <input type="submit" value="Advanced Search" class="advanced-search-button">
+        </div>
+
       </div>
     </form>
   </main>
