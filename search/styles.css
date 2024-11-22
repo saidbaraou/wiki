@@ -154,7 +154,7 @@ span.images {
   flex-direction: column;
   width: 66%;
 }
-.form-rows {
+.form-row {
   min-width: 400px;
   display: flex;
   justify-content: space-evenly;
