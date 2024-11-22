@@ -145,13 +145,6 @@ span.images {
   font-size: 0.9rem;
 }
 
-.form-fields {
-  width: 100%;
-  text-align: left; 
-  display:inline-block;
-  text-align: left;
-}
-
 .form-row {
   clear:both;
 }
@@ -181,10 +174,6 @@ span.images {
     min-height: 41px;
     vertical-align: middle;
     width: 50%;
-}
-
-.row-search-bar {
-  padding-right: 16px;
 }
 
 input[type='text'].advanced-search-bars {

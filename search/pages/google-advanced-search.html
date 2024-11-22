@@ -15,56 +15,68 @@
   <label class="advanced-label">Advanced Search</label>
   <div class="horizontal-line"></div>
   <main class="main-form">
-    <form action="/search" class="advanced-form">
+    <form action="/search">
       <div class="form-label">
         <span>Find pages with...</span>
       </div>
-      <div class="form-fields">
-        <div class="form-row">
-          <div class="label-wrapper">
-            <div class="row-label">
-              <label>all these words:</label>
-            </div>
-          </div>
-          <div class="search-bar-wrapper">
-            <div class="row-search-bar">
-              <input type="text" name="q" class="advanced-search-bars">
-            </div>
 
+      <div class="form-row">
+        <div class="label-wrapper">
+          <div class="row-label">
+            <label>all these words:</label>
           </div>
         </div>
-
-
-
-        <div class="form-row">
-          <div>
-            <label>This exact word <br> or phrase:</label>
-          </div>
-          <div>
+        <div class="search-bar-wrapper">
+          <div class="row-search-bar">
             <input type="text" name="q" class="advanced-search-bars">
           </div>
+
         </div>
-        <div class="form-row">
-          <div>
+      </div>
+      <div class="form-row">
+        <div class="label-wrapper">
+          <div class="row-label">
+            <label>this exact word or phrase:</label>
+          </div>
+        </div>
+        <div class="search-bar-wrapper">
+          <div class="row-search-bar">
+            <input type="text" name="q" class="advanced-search-bars">
+          </div>
+
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="label-wrapper">
+          <div class="row-label">
             <label>any of these words:</label>
           </div>
-          <div>
+        </div>
+        <div class="search-bar-wrapper">
+          <div class="row-search-bar">
             <input type="text" name="q" class="advanced-search-bars">
           </div>
-        </div>
-        <div class="form-row">
-          <div>
-            <label>none of this words:</label>
-          </div>
-          <div>
-            <input type="text" name="q" class="advanced-search-bars">
-          </div>
-        </div>
-        <div class="advanced-button-container">
-          <input type="submit" value="Advanced Search" class="advanced-search-button">
-        </div>
 
+        </div>
       </div>
+      <div class="form-row">
+        <div class="label-wrapper">
+          <div class="row-label">
+            <label>none of these words:</label>
+          </div>
+        </div>
+        <div class="search-bar-wrapper">
+          <div class="row-search-bar">
+            <input type="text" name="q" class="advanced-search-bars">
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
     </form>
   </main>
 
