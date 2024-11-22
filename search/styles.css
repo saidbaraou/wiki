@@ -153,11 +153,13 @@ span.images {
   display: flex;
   flex-direction: column;
   width: 66%;
+  text-align: left;
 }
 
 .form-row {
   min-width: 600px;
   display: flex;
+  float:left;
   justify-content: flex-start;
   align-items: center;
   padding: 1rem 1rem;
