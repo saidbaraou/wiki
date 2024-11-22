@@ -165,12 +165,23 @@ span.images {
 input[type='text'].advanced-search-bars {
   width: 400px;
   margin-bottom: 0;
-  border-radius: 0;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
 }
 
-input[type='text'].advanced-search-bars:hover,
-input[type='text'].advanced-search-bars:focus
- {
+input[type='text'].advanced-search-bars:hover {
   box-shadow: none;
- border: 1px solid #dfe1e5;
 }
+
+input[type='text'].advanced-search-bars:focus {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+
+
