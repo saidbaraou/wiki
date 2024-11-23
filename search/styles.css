@@ -224,3 +224,9 @@ input[type="submit"].advanced-search-button:active {
 }
 
 
+.btns-wrapper {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
