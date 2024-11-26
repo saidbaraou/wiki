@@ -9,11 +9,11 @@ Function that converts md files to HTML
 """
 def md_conversion(title):
     md_page = util.get_entry(title)
-    markdowner = Markdown()
+    # markdowner = Markdown()
     if md_page == None:
         return None
     else:
-        return markdowner.convert(md_page)
+        return Markdown().convert(md_page)
     
 
 def index(request):
