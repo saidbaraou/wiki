@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+# from django.http import HttpResponse
 from django.shortcuts import render
 
 from . import util
@@ -11,5 +11,5 @@ def index(request):
 
 def entry_page(request, title):
     return render(request, f"encyclopedia/wiki/{title}", {
-        "entry_title": util.get_entry(title)
+        "entry_page": util.get_entry(title)
     })
