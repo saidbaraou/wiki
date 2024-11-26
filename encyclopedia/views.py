@@ -4,6 +4,9 @@ import markdown
 
 from . import util
 
+"""
+Function that converts md files to HTML
+"""
 def md_conversion(title):
     md_page = util.get_entry(title)
     markdowner = Markdown()
