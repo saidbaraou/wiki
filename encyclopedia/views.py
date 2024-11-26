@@ -8,7 +8,7 @@ def index(request):
         "entries": util.list_entries()
     })
 
-def entry_page(request):
+def entry_page(request, title):
     return render(request, f"encyclopedia/wiki/{title}", {
         "entry_title": util.get_entry(title)
     })
