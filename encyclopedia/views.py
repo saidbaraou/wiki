@@ -25,9 +25,10 @@ def entry_page(request, title):
     html_page = md_conversion(title)
     if html_page == None:
         return render(request, "encyclopedia/error.html", {
-            "error _message": "The requested page was not found"
+            "error_message": "The requested page was not found"
         })
     else:
-        return render(request, f"encyclopedia/wiki/{title}", {
-            "entry_page": util.get_entry(title)
+        return render(request, "encyclopedia/entry.html", {
+            "title": title,
+            "content": html_page
         })
