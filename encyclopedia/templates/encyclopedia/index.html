@@ -5,12 +5,7 @@ Encyclopedia
 {% endblock %}
 
 {% block body %}
-<h1>All Pages</h1>
-
-<ul>
-    {% for entry in entries %}
-    <li><a href="{% url 'entry_page' title=entry %}">{{ entry }}</a></li>
-    {% endfor %}
-</ul>
+<h1>Error: Requested page was not found</h1>
+<a href="{% url 'index' %}">Back to HOME PAGE</a>
 
 {% endblock %}
