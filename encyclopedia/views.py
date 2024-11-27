@@ -22,6 +22,9 @@ def index(request):
     })
 
 def entry_page(request, title):
-    return render(request, f"encyclopedia/wiki/{title}", {
-        "entry_page": util.get_entry(title)
-    })
+    if not title:
+        return render(request, "encyclopedia/error.html")
+    else:
+        return render(request, f"encyclopedia/wiki/{title}", {
+            "entry_page": util.get_entry(title)
+        })
