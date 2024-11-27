@@ -5,7 +5,13 @@ Encyclopedia
 {% endblock %}
 
 {% block body %}
-<h1>Error: Requested page was not found</h1>
-<a href="{% url 'index' %}">Back to HOME PAGE</a>
+<h1>All Pages</h1>
+
+<ul>
+  {% for entry in entries %}
+  <li>{{ entry }}</li>
+  {% endfor %}
+</ul>
+
 
 {% endblock %}
