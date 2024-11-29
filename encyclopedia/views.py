@@ -32,3 +32,6 @@ def entry_page(request, title):
             "title": title,
             "content": html_page
         })
+
+def search(request):
+    return 
