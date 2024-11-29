@@ -34,4 +34,11 @@ def entry_page(request, title):
         })
 
 def search(request):
-    return 
+    if request.method == 'POST':
+        entry_search = request.POST['q']
+        html_page = md_conversion(entry_search)
+        if html_page is not None:
+            return render(request, "encyclopedia/entry.html", {
+            "title": entry_search,
+            "content": html_page
+        })
