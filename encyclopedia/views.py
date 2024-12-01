@@ -33,7 +33,7 @@ def entry_page(request, title):
             "content": html_page
         })
 
-def search(request, title):
+def search(request):
     if request.method == 'POST':
         entry_search = request.POST['q']
         html_page = md_conversion(entry_search)
