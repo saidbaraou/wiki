@@ -5,7 +5,7 @@ import markdown
 from . import util
 
 """
-Function that converts md files to HTML
+Function that converts md files to HTML using markdown library
 """
 def md_conversion(title):
     md_page = util.get_entry(title)
@@ -42,3 +42,12 @@ def search(request):
             "title": entry_search,
             "content": html_page
         })
+        else:
+            entries = util.list_entries()
+            suggestions = []
+            for entry in entries:
+                if entry_search.lower() in entry.lower():
+                    suggestions.append(entry)
+            return render(request, "encyclopedia/search_results.html", {
+                "suggestions": suggestions
+            })
