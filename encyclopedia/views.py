@@ -48,7 +48,7 @@ def search(request):
             for entry in entries:
                 if entry_search.lower() in entry.lower():
                     suggestions.append(entry)
-            return render(request, "encyclopedia/search_results.html", {
+            return render(request, "encyclopedia/search-results.html", {
                 "suggestions": suggestions
             })
 
