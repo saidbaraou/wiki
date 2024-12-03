@@ -54,5 +54,5 @@ def search(request):
 
 def new_page(request):
     return render(request, "encyclopedia/new-page.html", {
-        
+        "title": "Create a new page"
     })
