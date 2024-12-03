@@ -12,4 +12,13 @@ Encyclopedia
 
 <a href="{% url 'index' %}">Home</a>
 
+<form action="{% 'new_page' %}" method="POST">
+  {% csrf_token %}
+  <input type="text" id="title" name="title" placeholder="Enter a title" required>
+  <textarea name="content" id="content" rows="10" cols="30"></textarea>
+
+</form>
+
+
+
 {% endblock %}
