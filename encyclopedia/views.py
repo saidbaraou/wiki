@@ -57,3 +57,18 @@ def new_page(request):
         return render(request, "encyclopedia/new-page.html", {
             "title": "Create a new page"
         })
+    else: 
+        title = request.POST['title']
+        content = request.POST['content']
+        if util.get_entry(title) is not None:
+            return render(request, "encyclopedia/error.html", {
+                "message": "This page already exists"
+            })
+        else:
+            util.save_entry(title, content)
+            html_page = md_conversion(title)
+            return render(request, "encyclopedia/entry.html", {
+                title: title,
+                "content": html_page
+            })
+
