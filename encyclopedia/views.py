@@ -72,6 +72,8 @@ def new_page(request):
                 "content": html_page
             })
         
-def edit_content(request):
-    render
+def edit_content(request, title):
+        return render(request, "encyclopedia/entry.html", {
+            "title": title
+        })
 
