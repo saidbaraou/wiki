@@ -71,4 +71,7 @@ def new_page(request):
                 title: title,
                 "content": html_page
             })
+        
+def edit_content(request):
+    render
 
