@@ -62,7 +62,7 @@ def new_page(request):
         content = request.POST['content']
         if util.get_entry(title) is not None:
             return render(request, "encyclopedia/error.html", {
-                "message": "This page already exists"
+                "error_message": "This page already exists"
             })
         else:
             util.save_entry(title, content)
