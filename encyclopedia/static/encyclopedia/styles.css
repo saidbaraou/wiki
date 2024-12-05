@@ -12,10 +12,10 @@ h1 {
     padding-top: 20px;
 }
 
-textarea{
+textarea {
     height: 30vh;
-    width: 50%;
-    margin-top: 20px;
+    width: 70%;
+    margin: 20px 0 20px 0;
 }
 
 .main {
