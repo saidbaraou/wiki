@@ -7,6 +7,9 @@
 {% block body %}
 {{ content|safe }}
 
-<a href="{% url 'edit_content' title='entry' %}">Edit</a>
+
+<form action="{% url 'edit-content' %}" method="POST">
+
+</form>
 
 {% endblock %}
