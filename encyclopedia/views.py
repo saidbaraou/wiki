@@ -1,6 +1,7 @@
 # from django.http import HttpResponse
 from django.shortcuts import render
-import markdown
+import markdown, random
+
 
 from . import util
 
@@ -92,6 +93,8 @@ def save_changes(request):
                     "content": html_page
                 })
         
-def random_page(request):
-        return
+def random_page(request, title):
+        entries = util.list_entries()
+        random_entry = random.choice(entries)
+        
 
