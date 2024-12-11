@@ -96,5 +96,10 @@ def save_changes(request):
 def random_page(request, title):
         entries = util.list_entries()
         random_entry = random.choice(entries)
+        html_page = md_conversion(random_entry)
+        return render(request, "encyclopedia/entry.html", {
+             "title": random_entry,
+             "content": html_page
+        })
         
 
