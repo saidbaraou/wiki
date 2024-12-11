@@ -91,4 +91,7 @@ def save_changes(request):
                     "title": title,
                     "content": html_page
                 })
+        
+def random_page(request):
+        return
 
