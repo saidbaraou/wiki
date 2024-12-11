@@ -93,7 +93,7 @@ def save_changes(request):
                     "content": html_page
                 })
         
-def random_page(request, title):
+def random_page(request):
         entries = util.list_entries()
         random_entry = random.choice(entries)
         html_page = md_conversion(random_entry)
