@@ -1,8 +1,6 @@
 # from django.http import HttpResponse
 from django.shortcuts import render
 import markdown, random
-
-
 from . import util
 
 """
@@ -15,7 +13,6 @@ def md_conversion(title):
         return None
     else:
         return markdowner.convert(md_page)
-    
 
 def index(request):
     return render(request, "encyclopedia/index.html", {
@@ -101,5 +98,3 @@ def random_page(request):
              "title": random_entry,
              "content": html_page
         })
-        
-
