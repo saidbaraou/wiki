@@ -15,9 +15,9 @@ A simple wiki built with Django.
   - [Installation](#installation)
   - [Running the Development Server](#running-the-development-server)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Features](#features)
+- [Technologies used](#technologies-used)
+
 
 ## 🔍Overview
 
