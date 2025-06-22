@@ -35,9 +35,9 @@ def search(request):
     if request.method == 'POST':
         entry_search = request.POST['q']
         html_page = md_conversion(entry_search)
-        if html_page is not None:
-            return render(request, "encyclopedia/entry.html", {
-            "title": entry_search,
+        print(f"Result from md_conversion: {html_page[:50] if html_page else 'None'}") # Debugging (show first 50 chars or 'None')
+        if html_page is None:
+            return render(request, "encyclopedia/search-null.html", {
             "content": html_page
         })
         else:
