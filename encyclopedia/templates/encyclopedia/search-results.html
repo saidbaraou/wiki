@@ -10,7 +10,6 @@ Encyclopedia
 <ul>
   {% for entry in suggestions %}
   <li><a href="{% url 'entry_page' title=entry %}">{{ entry }}</a></li>
-  THIS IS A TEST
   {% empty %}
   {% endfor %}
 </ul>
