@@ -38,6 +38,7 @@ def search(request):
         print(f"Result from md_conversion: {html_page[:50] if html_page else 'None'}") # Debugging (show first 50 chars or 'None')
         if html_page is not None:
             return render(request, "encyclopedia/entry.html", {
+
             "content": html_page,
             "title": entry_search
         })
