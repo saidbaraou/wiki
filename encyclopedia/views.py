@@ -43,11 +43,12 @@ def search(request):
         else:
             entries = util.list_entries()
             suggestions = []
-            for entry in entries:
+            for entry in entries:   
                 if entry_search.lower() in entry.lower():
                     suggestions.append(entry)
             return render(request, "encyclopedia/search-results.html", {
-                "suggestions": suggestions
+                "suggestions": suggestions,
+                "entry_search": entry_search
             })
 
 def new_page(request):
