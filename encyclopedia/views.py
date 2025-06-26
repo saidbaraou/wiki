@@ -67,7 +67,7 @@ def new_page(request):
             util.save_entry(title, content)
             html_page = md_conversion(title)
             return render(request, "encyclopedia/entry.html", {
-                title: title,
+                "title": title,
                 "content": html_page
             })
         
