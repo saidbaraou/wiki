@@ -23,7 +23,7 @@ def entry_page(request, title):
     html_page = md_conversion(title)
     if html_page == None:
         return render(request, "encyclopedia/error.html", {
-            "error_message": "The requested page was not found"
+            "error_message": "404 The requested page was not found"
         })
     else:
         return render(request, "encyclopedia/entry.html", {
@@ -61,7 +61,7 @@ def new_page(request):
         content = request.POST['content']
         if util.get_entry(title) is not None:
             return render(request, "encyclopedia/error.html", {
-                "error_message": "This page already exists"
+                "error_message": "This entry already exists"
             })
         else:
             util.save_entry(title, content)
