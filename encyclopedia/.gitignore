@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment (if you use one)
+.venv/
+env/
+venv/
+
+# Editor/IDE files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Project-specific files (e.g., local settings, test data)
+# my_project/settings_local.py
+# db.sqlite3
