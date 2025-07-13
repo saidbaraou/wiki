@@ -20,7 +20,7 @@ def save_entry(title, content):
     it is replaced.
     """
     filename = f"entries/{title}.md"
-    full_content = f"# {title}\n\n{content}"
+    full_content = f"#{title}\n\n{content}"
     if default_storage.exists(filename):
         default_storage.delete(filename)
     default_storage.save(filename, ContentFile(full_content))
