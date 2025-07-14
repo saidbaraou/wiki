@@ -1,6 +1,7 @@
 # from django.http import HttpResponse
 from django.shortcuts import render
-import markdown, random
+import markdown, random, redirect
+from django.http import Http404
 from . import util
 
 """
