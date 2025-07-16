@@ -1,22 +1,25 @@
-# Python
+# Python bytecode
 __pycache__/
 *.pyc
-*.pyd
 *.pyo
+*.pyd
 
-# Virtual environment (if you use one)
-.venv/
-env/
-venv/
+# Virtual environment
+# If you use a virtual environment named 'venv' or 'env', uncomment these:
+# venv/
+# env/
 
-# Editor/IDE files
-.vscode/
-.idea/
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Project-specific files (e.g., local settings, test data)
-# my_project/settings_local.py
+# Database (if using SQLite, common in Django development)
 # db.sqlite3
+
+# Media and static files (if you store user-uploaded content or collected static files in version control)
+# /media/
+# /static_root/
+
+# IDE/Editor specific files (examples for common ones)
+.idea/             # IntelliJ/PyCharm
+.vscode/           # VS Code
+*.sublime-project  # Sublime Text
+*.sublime-workspace
+.DS_Store          # macOS specific
+Thumbs.db          # Windows specific
