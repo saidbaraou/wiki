@@ -1,6 +1,6 @@
 # from django.http import HttpResponse
-from django.shortcuts import render
-import markdown, random, redirect
+from django.shortcuts import render, redirect
+import markdown, random
 from django.http import Http404
 from . import util
 
@@ -118,7 +118,7 @@ def save_changes(request):
         util.save_entry(title, content) 
         
         # After saving, redirect to the entry's display page
-        return redirect("entry", title=title)
+        return redirect("entry_page", title=title)
     
     # If someone tries to GET this URL directly, redirect them
     return redirect("index")
