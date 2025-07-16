@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.Pyhton
 
 # Virtual environment
 # If you use a virtual environment named 'venv' or 'env', uncomment these:
