@@ -90,7 +90,7 @@ def edit_content(request, title):
     body_content = ""
     lines = full_markdown_content.split('\n')
     
-    if len(lines) > 0 and lines[0].startswith('# '):
+    if len(lines) > 0 and lines[0].startswith('#\w'):
         first_body_line_index = 1
         while first_body_line_index < len(lines) and not lines[first_body_line_index].strip():
             first_body_line_index += 1
