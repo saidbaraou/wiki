@@ -88,7 +88,7 @@ def edit_content(request, title):
     if full_content is None:
         raise Http404("Entry does not exist.") 
 
-    # --- NEW LOGIC: Extract body content by stripping the H1 title ---
+        #Extract body content by stripping the H1 title ---
     body_content = ""
     lines = full_content.split('\n')
     
@@ -100,7 +100,6 @@ def edit_content(request, title):
     else:
         # Fallback if entry doesn't start with H1 (shouldn't happen if new_page works)
         body_content = full_content
-    # --- END NEW LOGIC ---
         
         return render(request, "encyclopedia/edit-content.html", {
                 "title": title,

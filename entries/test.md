@@ -1,13 +1,3 @@
-#another test
+#Title here
 
-
-
-<<<<<<< HEAD
-Let me test another time
-=======
-
-
-
-
-It's now working fine !!
->>>>>>> fix/edit-content
+Text is here
