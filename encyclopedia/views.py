@@ -60,6 +60,7 @@ def new_page(request):
     else: 
         title = request.POST['title']
         content = request.POST['content']
+
         if util.get_entry(title) is not None:
             return render(request, "encyclopedia/error.html", {
                 "error_message": "This entry already exists"
@@ -78,14 +79,14 @@ def edit_content(request, title):
     Displays the form to edit an existing entry.
     This view should primarily handle GET requests.
     """
-    # Ensure this view is only accessed via GET for display
+    
     if request.method != "GET":
-        return redirect("index") # Or return an error
+        return redirect("index") 
 
     full_content = util.get_entry(title)
     
     if full_content is None:
-        raise Http404("Entry does not exist.") # Or render an error page
+        raise Http404("Entry does not exist.") 
 
     # --- NEW LOGIC: Extract body content by stripping the H1 title ---
     body_content = ""
@@ -111,18 +112,14 @@ def save_changes(request):
     Handles the POST request from the edit form to save changes.
     """
     if request.method == "POST":
-        title = request.POST['title']          # This is the original title (from hidden input)
-        content = request.POST['content']      # This is the edited body content from the textarea
+        title = request.POST['title']        
+        content = request.POST['content']    
         
-        # At this point, 'content' should NOT have the H1 title.
-        # Your util.save_entry will prepend it again.
-        full_content = f"#{title}\n\n{content}"
+        full_content = f"{content}"
         util.save_entry(title, full_content) 
         
-        # After saving, redirect to the entry's display page
         return redirect("entry_page", title=title)
     
-    # If someone tries to GET this URL directly, redirect them
     return redirect("index")
 
         
