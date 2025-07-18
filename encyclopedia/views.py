@@ -65,7 +65,8 @@ def new_page(request):
                 "error_message": "This entry already exists"
             })
         else:
-            util.save_entry(title, content)
+            full_content = f"#{title}\n\n{content}"
+            util.save_entry(title, full_content)
             html_page = md_conversion(title)
             return render(request, "encyclopedia/entry.html", {
                 "title": title,
@@ -81,14 +82,14 @@ def edit_content(request, title):
     if request.method != "GET":
         return redirect("index") # Or return an error
 
-    full_markdown_content = util.get_entry(title)
+    full_content = util.get_entry(title)
     
-    if full_markdown_content is None:
+    if full_content is None:
         raise Http404("Entry does not exist.") # Or render an error page
 
     # --- NEW LOGIC: Extract body content by stripping the H1 title ---
     body_content = ""
-    lines = full_markdown_content.split('\n')
+    lines = full_content.split('\n')
     
     if len(lines) > 0 and lines[0].startswith('# '):
         first_body_line_index = 1
@@ -97,7 +98,7 @@ def edit_content(request, title):
         body_content = "\n".join(lines[first_body_line_index:])
     else:
         # Fallback if entry doesn't start with H1 (shouldn't happen if new_page works)
-        body_content = full_markdown_content
+        body_content = full_content
     # --- END NEW LOGIC ---
         
         return render(request, "encyclopedia/edit-content.html", {
@@ -115,7 +116,8 @@ def save_changes(request):
         
         # At this point, 'content' should NOT have the H1 title.
         # Your util.save_entry will prepend it again.
-        util.save_entry(title, content) 
+        full_content = f"#{title}\n\n{content}"
+        util.save_entry(title, full_content) 
         
         # After saving, redirect to the entry's display page
         return redirect("entry_page", title=title)
