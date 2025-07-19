@@ -1,0 +1,232 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+  padding: 6px;
+  margin-right: 15px;
+}
+
+.links-box {
+  width: 18rem;
+  display: flex;
+}
+
+.image-search {
+  padding: 0 0 0 15px;
+}
+
+.advanced-search {
+  padding: 0 15px 0 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='text'] {
+  max-width: 584px;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 24px;
+  margin-bottom: 18px;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+input[type='submit'] {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type='text']:hover,
+input[type='text']:focus {
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
+input[type='submit']:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.logo {
+  position: relative;
+}
+
+span.images {
+  color: #4285f4;
+  font: 16px / 16px Arial, sans-serif;
+  position: absolute;
+  top: 74px;
+  right: 5px;
+  white-space: nowrap;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid #ebebeb;
+  margin-top: 1.3rem;
+}
+
+.main-form {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1140px;
+  min-width: 200px;
+  width: 96%;
+  margin: 40px 2% 0 45px;
+}
+
+.advanced-label {
+  color: #d93025;
+  margin: 0 0 0 10px;
+  font-size: 20px;
+}
+
+.form-label {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-row {
+  clear:both;
+}
+
+.label-wrapper {
+  float: left;
+  display: inline-block;
+  min-width: 130px;
+  width: 16%;
+  height: 42px;
+  color: #222;
+  font-size: 13px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+
+.row-label {
+  height: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.search-bar-wrapper {
+  float: left;
+  display: inline-block;
+  min-width: 400px;
+  min-height: 41px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+input[type='text'].advanced-search-bars {
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  min-height: 24px;
+  padding: 1px 8px;
+}
+
+input[type='text'].advanced-search-bars:hover {
+  box-shadow: none;
+}
+
+input[type='text'].advanced-search-bars:focus {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+.advanced-button-container {
+  float:right;
+  margin: 10px 0;
+}
+
+input[type="submit"].advanced-search-button {
+  font-size:13px;
+  height:30px;
+  box-shadow: none;
+  background-color: #4d90fe;
+  background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+  border: 1px solid #3079ed;
+  color: #ffffff;
+}
+
+input[type="submit"].advanced-search-button:hover {
+  background-color: #357ae8;
+  background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
+  border: 1px solid #2f5bb7;
+}
+
+input[type="submit"].advanced-search-button:active {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+  background: #357ae8;
+  border: 1px solid #2f5bb7;
+  border-top: 1px solid #2f5bb7;
+}
+
+
+.btns-wrapper {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
