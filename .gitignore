@@ -5,22 +5,19 @@ __pycache__/
 *.pyd
 .Python
 
-# Virtual environment
-# If you use a virtual environment named 'venv' or 'env', uncomment these:
-# venv/
-# env/
 
-# Database (if using SQLite, common in Django development)
-# db.sqlite3
+venv/
+env/
 
-# Media and static files (if you store user-uploaded content or collected static files in version control)
-# /media/
-# /static_root/
 
-# IDE/Editor specific files (examples for common ones)
-.idea/             # IntelliJ/PyCharm
-.vscode/           # VS Code
-*.sublime-project  # Sublime Text
+db.sqlite3
+
+/media/
+/static_root/
+
+
+.idea/            
+.vscode/           
+*.sublime-project  
 *.sublime-workspace
-.DS_Store          # macOS specific
-Thumbs.db          # Windows specific
+Thumbs.db         
