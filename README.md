@@ -5,7 +5,6 @@ A simple wiki built with Django.
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-%3E=3.0-green.svg)](https://www.djangoproject.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 📑Table of Contents
 
