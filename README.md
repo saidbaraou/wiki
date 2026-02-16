@@ -1,7 +1,7 @@
 
 # wiki
 
-A simple wiki built with Django.
+A basic Wikipedia-like online encyclopedia.
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-%3E=3.0-green.svg)](https://www.djangoproject.com/)
