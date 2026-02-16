@@ -97,4 +97,3 @@ Follow these instructions to get a copy of the project up and running on your lo
 ![image](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![image](https://img.shields.io/badge/Sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 =======
-# saidbaraou
